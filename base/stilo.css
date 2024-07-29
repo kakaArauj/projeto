@@ -1,65 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+    color: #fff;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2a2a2a;
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+#maranhao, #culinaria, #festas, #artesanato, #turismo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 100px 0;
+    width: 70vw;
+    margin: auto;
+    gap: 30px;
+}
+#maranhao .maranhao-bandeira img{
+    height: 300px;
+    width: 500px;
+}
+#culinaria, #festas, #artesanato, #turismo{
+    flex-direction: column;
+    width: 60vw;
 
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
+}
 
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #444;
-        }
-
-        nav a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-align: center;
-        }
-
-        nav a:hover {
-            background-color: #555;
-        }
-
-        .container {
-            padding: 20px;
-        }
-
-        .news-article {
-            border-bottom: 1px solid #ccc;
-            margin-bottom: 20px;
-            padding-bottom: 20px;
-        }
-
-        .news-article h2 {
-            margin-top: 0;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        @media (max-width: 600px) {
-            nav {
-                flex-direction: column;
-            }
-
-            .news-article {
-                text-align: center;
-            }
-        }
+header {
+    background-color: #333;
+    background-image: url("./img/Centro-Histórico-.-768x512.jpg");
+    color: white;
+    height: 350px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     
+}
+
+nav {
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.news-article {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.news-article h2 {
+    margin-top: 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .news-article {
+        text-align: center;
+    }
+}
+
